@@ -1,7 +1,7 @@
 # CYD35_test
 
 Initial development/test of the Cheap Yellow Display (CYD) for the ESP-3248S035 (3.5" screen) board, which exercises the display graphics, Touch screen interface, and the Wireless interface (2.4G) This project was developed on Windows 11 under (so the PlatformIO '.ini' file is configured to) the following directory structure:
-
+```
 any-folder/
     /cyd35_test2
     /libraries
@@ -9,7 +9,7 @@ any-folder/
       /AsyncTCP
       /ESPAsyncWebServer
       /gt911-arduino
- 
+ ```
 The folder references are relative such that these folders can be located anywhere in a directory hirearchy so long as their relative locations are maintained.  Users with libraries installed in a different directory structure (ie, 'elsewhere') must edit the 'symlink' definitions in the 'lib_deps' section of this projects 'platformio.ini' file. As always, following any changes to the 'platformio.ini' file the user should run a project 'clean' (via pull-down in the upper-righ corner of the IDE) and rebuild of the project.
 
 All four libraries were the latest versions (ie, 'master') as of ~9/7/25 downloaded from GitHub.
